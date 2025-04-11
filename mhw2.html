@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Douglas - Profumeria Online</title>
+    <link rel="stylesheet" href="mhw2.css">
+    <script src="mhw2.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <div class="flex-container">
+      <div class="flex-item-left">
+       <span id="t1"> 2 campioni omaggio per ogni ordine*  </span>
+        <span id="t2">  Spedizione gratuita da 35,00€ </span>
+      </div>
+
+      <nav class="flex-item-right">
+        <a>SERVIZI</a>
+        <a >BEAUTY CARD</a>
+        <a>I NEGOZI</a>
+        <a>SPEDIZIONI</a>
+      </nav>
+    </div>
+
+    <div class="codici-sconto"> 
+        <p>-20% SUI PRODOTTI CON ETICHETTA "SPRING20" DA 89€ E SOLO OGGI SPEDIZIONE GRATUITA</p> 
+    </div>
+    
+    <header class="navbar">
+      <div class="search-bar">
+
+        <div id="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="search">
+        <input type="text" placeholder="Cosa stai cercando?">
+        <img src="search_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="search" class="icon">
+      </div>
+      </div>
+      <div class="logo">
+        <img src="logo ufficiale.png" alt="Logo Douglas">
+      </div>
+  
+      <button class="icons"> 
+        <img src="location_on_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Posizione"class="icon">
+        <img src="person_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="utente" class="icon">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon" id="preferiti">
+        <img src="shopping_cart_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Carrello" class="icon">
+      </button>
+  
+    </header>
+
+
+    <div id ="category">
+      <a>PROFUMI</a>
+      <a >MAKE-UP</a>
+      <a>SKINCARE</a>
+      <a>CAPELLI</a>
+      <a>MARCHI</a>
+    </div>
+    <div id="immagine-principale-da-computer">
+
+      <button class="back-hidden"> 
+        <img src="chevron_backward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="back">
+      </button> 
+      <button class=" next"> 
+        <img src="navigate_next_24dp_1F1F1F.png" alt="next">
+      </button>
+      <img src="https://media.douglas.it/medias/Hero-XL-3072x1314-RZ2.jpg?context=bWFzdGVyfGltYWdlc3wyNjc3MDl8aW1hZ2UvanBlZ3xhRGd6TDJnd1pTODJOREkyTURrMU1qWTROall5TWk5SVpYSnZMVmhNTFRNd056SjRNVE14TkMxU1dqSXVhbkJufGI4MjViODQ2MjA2MjcwNGE5YjM0MmE0YTlhMWE0OTY5MzRiYThhY2ZlZDU4NmFkYTRlNDVlYmI0NzM1Zjk0ZGY&imdensity=1&imwidth=3072" class="img-showed">
+    <img src="https://media.douglas.it/medias/Hero-Teaser-XL-3072x1314px-GWP.jpg?context=bWFzdGVyfGltYWdlc3w0NjMyOTZ8aW1hZ2UvanBlZ3xhRGhsTDJnd09DODJORFUzT1RRNE5EQTVNRE01T0M5SVpYSnZMVlJsWVhObGNpMVlUQzB6TURjeWVERXpNVFJ3ZUMxSFYxQXVhbkJufDhhZGYxNWFjMTRjMWFlMTg2ZDBlOTk5Mjk0YzVhODg2NTYyOTljYjMwYjg5ZTcwMGIzZDEwY2I3OTVjNzM2MzI&imdensity=1&imwidth=3072" class="img-hidden">
+  </div>
+
+    <div id="immagine-principale-mobile">
+      <button class="back"> 
+        <img src="chevron_backward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="back">
+      </button> 
+      <button class=" next"> 
+        <img src="navigate_next_24dp_1F1F1F.png" alt="next">
+      </button>
+     <img src="https://media.douglas.it/medias/Hero-S-1170x2079.jpg?context=bWFzdGVyfGltYWdlc3wyNTc3NjJ8aW1hZ2UvanBlZ3xhRGsxTDJneE1TODJOREkyTURrMU1qYzFNakUxT0M5SVpYSnZMVk10TVRFM01IZ3lNRGM1TG1wd1p3fDQxOGIxNGMwM2QwNzRiNmM1MDI5NDAwNjdlODlhNWUxZjE2Yjc1MmQ0MTg1OTAyMmZlNDFkNzBlODNhMTVhMWE&imdensity=1&imwidth=767" class="img-showed">
+     <img src="https://media.douglas.it/medias/Hero-Teaser-S-1170x2079px-GWP.jpg?context=bWFzdGVyfGltYWdlc3wzNTMyNTh8aW1hZ2UvanBlZ3xhRGt4TDJnd05TODJORFUzT1RRNE5ERTFOVGt6TkM5SVpYSnZMVlJsWVhObGNpMVRMVEV4TnpCNE1qQTNPWEI0TFVkWFVDNXFjR2N8YzY2YWMyMjJiZTVlYWE0OTA4MjE1NWY3YmEyZWJhZmViZmFiZjQ3YjNiYzk2N2RmMmYyNmM2ZGZmNWQ0YmRlNg&imdensity=1&imwidth=767" class="img-hidden">
+    </div>
+
+    <div class="standard">
+      <p class="title-intestazione">SCELTI PER TE</p>
+    </div>
+    
+    <section class="catalogo" data-index="1">
+      <button class="back-hidden"> 
+        <img src="chevron_backward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="back">
+      </button> 
+        <button class=" next"> 
+          <img src="navigate_next_24dp_1F1F1F.png" alt="next">
+        </button>
+        <div class="prodotto">
+          <div class="img-container">
+          <img src="https://media.douglas.it/medias/xbNoO9652303-0-global.jpg?context=bWFzdGVyfGltYWdlc3w0MjkxN3xpbWFnZS9qcGVnfGFEa3dMMmhrWVM4Mk16VTNPVEE1TmpNMU1EYzFNQzk0WWs1dlR6azJOVEl6TUROZk1GOW5iRzlpWVd3dWFuQm58MTA5OTljMTMyNjI2ZTZjYjNjMjI4MDI5ZjQ5ODQ0ZjI1MWE5YzJlYWJlNzBlMDJhMjU0ZGFiODZkZTZhZGUwMg&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+          <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+         <div class="descrizione-prodotto"> 
+          <p class="t">E.L.F</p>
+         <p class="desc"> Hydrating Satin Camo Concealer </p>
+          <p class="light-font">Correttore</p>
+         <strong>€9,99</strong>
+         <p class="light-font">6 ml</p>
+         </div>
+         <div class="offerta"> 
+          <button> + SORPRESA</button>
+         </div>
+        </div>
+    
+        <div class="prodotto">
+          <div class="img-container">
+          <img src="https://media.douglas.it/medias/mEs4dg181386-0-global.jpg?context=bWFzdGVyfGltYWdlc3w2NDYyMXxpbWFnZS9qcGVnfGFHTXpMMmhrWWk4Mk16Y3lOemd4TXpFMk5UQTROaTl0UlhNMFpHY3hPREV6T0RaZk1GOW5iRzlpWVd3dWFuQm58YzUyMWEzYzhjMDU3Y2Y3NDY4YThhYmRmMjljZjUxZjYwOTYzMmJlZDJmYzFjNjAwMjc3OTBkMTk0MjY5MzA1OA&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+          <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+          </div>
+          <div class="descrizione-prodotto"> 
+            <p  class="t">KYLIE COSMETICS</p>
+            <p class="desc">Matte Lip Kit</p>
+            <p class="light-font">make-up set</p>
+            <strong>€36,99</strong>
+            <p class="light-font">4.25 g</p>
+          </div>
+          <div class="offerta"> 
+           <button> + SORPRESA</button>
+          </div>
+         </div>
+    
+         <div class="prodotto">
+          <div class="img-container">
+          <img src="https://media.douglas.it/medias/Bt6Gal1214398-0-dgl-IT.jpg?context=bWFzdGVyfGltYWdlc3w5MDExNXxpbWFnZS9qcGVnfGFHVXdMMmhtWkM4Mk16TTVOalV3T0RnMk1EUTBOaTlDZERaSFlXd3hNakUwTXprNFh6QmZaR2RzTFVsVUxtcHdad3w4YzM5ZTk3MzVhM2U3MjQ0NzRlOTdiNzMyNWY1MmFjYzBjMjY5YjhjOTIwNzcxZjUzYmRiODE3ZTIyYTA2ZDJi&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+          <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+          </div>
+          <div class="descrizione-prodotto"> 
+            <p  class="t">KYLIE JENNER FRAGRANCES</p>
+            <p class="desc">cosmic</p>
+            <p class="light-font">Eau de Parfum</p>
+            <strong>€72,99</strong>
+            <p class="light-font">100 ml</p>
+          </div>
+          <div class="offerta"> 
+           <button> + SORPRESA</button>
+          </div>
+         </div>
+      
+      <div class="prodotto">
+        <div class="img-container">
+        <img src="https://media.douglas.it/medias/a7Artc851991-0-global.jpg?context=bWFzdGVyfGltYWdlc3w3NzgwMXxpbWFnZS9qcGVnfGFHSmlMMmhpWlM4Mk16Y3pOakEyTXpZNE9EY3pOQzloTjBGeWRHTTROVEU1T1RGZk1GOW5iRzlpWVd3dWFuQm58ZWY2MWUxYjBmNjBiNDJhZmQyOGM2ZjhmNjFmMTg1YTc1YzdlNjc2NjhhZDIwOGY4ZjljZjhkMmU0YmRkZDIyOA&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=603">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+        <div class="descrizione-prodotto"> 
+          <p  class="t">MAYBELLINE</p>
+          <p class="desc">Lash Sensational Sky High</p>
+          <p class="light-font">Mascara</p>
+          <strong>€18,49</strong>
+          <p class="light-font">15 g</p>
+        </div>
+        <div class="offerta"> 
+         <button> + SORPRESA</button>
+        </div>
+       </div>
+    
+       <div class="prodotto">
+        <div class="img-container">
+          <img src="https://media.douglas.it/medias/F4j28I1223515-0-global.jpg?context=bWFzdGVyfGltYWdlc3w5MTAwNnxpbWFnZS9qcGVnfGFHVXdMMmhtTVM4Mk16VTNNRFExTURnM05ETTVPQzlHTkdveU9Fa3hNakl6TlRFMVh6QmZaMnh2WW1Gc0xtcHdad3xhNGRkYTRmMTI3ZWRkNDZjYTdlNzRhNDIxZTBlNDUwNjYwZGExZTJkY2NlMjE4NzVjNDNmMTgxNDVlZTBmZjA2&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+        <div class="descrizione-prodotto"> 
+          <p  class="t">MORPHE</p>
+          <p class="desc">Cloudlight Soft Glow Veil</p>
+          <p class="light-font">cipria</p>
+          <strong>€41,23</strong>
+          <p class="light-font">74 g</p>
+        </div>
+        <div class="offerta"> 
+         <button> + SORPRESA</button>
+        </div>
+       </div>
+    
+       <div class="prodotto-hidden">
+        <div class="img-container">
+        <img src="   https://media.douglas.it/medias/26GHDS1003491-0-dgl-IT.jpg?context=bWFzdGVyfGltYWdlc3w1MTc0NXxpbWFnZS9qcGVnfGFESmpMMmcxWWk4eE5UYzVPVEU0T0RFMk1EVTBNaTh5TmtkSVJGTXhNREF6TkRreFh6QmZaR2RzTFVsVUxtcHdad3w5YWYxZjJjM2FhNWRiZGVhYTkxNmNmYjY1MmQxMzQ4ODJiZGJmNjNmOGFiYWZhZDc4YmM0OWRlOGExMWNlYmZh&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=603    ">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+        <div class="descrizione-prodotto"> 
+          <p  class="t">ASTRA MAKE-UP</p>
+          <p class="desc">Long Stay Concealer</p>
+          <p class="light-font">Correttore</p>
+          <strong>€5,29</strong>
+          <p class="light-font">4.5 ml</p>
+        </div>
+        <div class="offerta"> 
+         <button> + SORPRESA</button>
+        </div>
+       </div>
+    
+       <div class="prodotto-hidden">
+        <div class="img-container">
+        <img src="https://media.douglas.it/medias/2avFLk1217573-0-dgl-IT.jpg?context=bWFzdGVyfGltYWdlc3wxNzY3MDB8aW1hZ2UvanBlZ3xhR0kwTDJnek15ODJNemcxTXpNd05qa3dORFl3Tmk4eVlYWkdUR3N4TWpFM05UY3pYekJmWkdkc0xVbFVMbXB3Wnd8MmE1MjJmZDRmYmM2NjE1ZWY4M2ViMWM0ZTI5YzAxMTFjZGNmM2FkOWY1YTUxZGFmMGVjNjViZmExZjYwNGVkZg&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775 ">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+        <div class="descrizione-prodotto"> 
+          <p  class="t">GUERLAIN</p>
+          <p class="desc">Aqua Allegoria Rosa Verde</p>
+          <p class="light-font">Eau de toilette</p>
+          <strong>€115,99</strong>
+          <p class="light-font">75 ml</p>
+        </div>
+        <div class="offerta"> 
+         <button> + SORPRESA</button>
+        </div>
+       </div>
+    
+       <div class="prodotto-hidden">
+        <div class="img-container">
+        <img src="https://media.douglas.it/medias/8f1kdv1187011-0-dgl-IT.jpg?context=bWFzdGVyfGltYWdlc3w5MTEzOHxpbWFnZS9qcGVnfGFEZGtMMmc0Tmk4ME56Y3dNVGt5TmpNM09UVTFNQzg0WmpGclpIWXhNVGczTURFeFh6QmZaR2RzTFVsVUxtcHdad3wwN2M2ZDI1MTUxODM2MzMyOWNhZTVjN2RkYmZhNTE4MGNmNTE2YjdhYmRlNjUxZTU0ZjMxZTJmMjM1MWI5MGU3&grid=true&imPolicy=grayScaled ">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+        <div class="descrizione-prodotto"> 
+          <p  class="t">DIEGO DALLA PALMA</p>
+          <p class="desc">iron lash & brow siero ciglia e sopracciglia 5in1
+          </p>
+          <p class="light-font">Trattamento ciglia</p>
+          <strong>75,49</strong>
+          <p class="light-font">92 ml</p>
+        </div>
+        <div class="offerta"> 
+         <button> + SORPRESA</button>
+        </div>
+       </div>
+    
+       <div class="prodotto-hidden">
+        <div class="img-container">
+        <img src="https://media.douglas.it/medias/BxxT2L1222110-0-dgl-IT.png?context=bWFzdGVyfGltYWdlc3wxNjYxNzR8aW1hZ2UvcG5nfGFEVTNMMmhsTVM4Mk16Z3lOems0TURjME5qYzRNaTlDZUhoVU1rd3hNakl5TVRFd1h6QmZaR2RzTFVsVUxuQnVad3w2NGQ0YjNhNzdlNmE5ZWY5ZGRjZDE5ODUyMTI4OGU1MTExODI1ZjI3NjQ3MmIxYmY0NzIyYjFhNzBlN2U2ZTAy&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775 ">
+        <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+        </div>
+        <div class="descrizione-prodotto"> 
+          <p  class="t">Rituals</p>
+          <p class="desc">The ritual of Mehr</p>
+          <p class="light-font">Spray corpo e capelli</p>
+          <strong>22,99</strong>
+          <p class="light-font">50 ml</p>
+        </div>
+        <div class="offerta"> 
+         <button> + SORPRESA</button>
+        </div>
+       </div>
+    
+    </section>
+    
+<div class="servizi">
+  <div class="intestazione">
+    <p class="title-intestazione">I SERVIZI DOUGLAS</p>
+    <a href="">trova il tuo negozio</a>
+  </div>
+  <div class="container">
+  <div class="content-section">
+  <img src="https://media.douglas.it/medias/Services-assetsbeautyservices.jpg?context=bWFzdGVyfGltYWdlc3wxODI3MjV8aW1hZ2UvanBlZ3xhREl5TDJnek15ODFNREk0TXpjME56UTBNamN4T0M5VFpYSjJhV05sY3kxaGMzTmxkSE5pWldGMWRIbHpaWEoyYVdObGN5NXFjR2N8ZjAxYWQ4MDNiNGZlMWVkN2MzYjAzMDZmY2UxYjEzMDk0MzM2ZTgyMzNkMTcwMWQxYjE5NDI4Mzk0YTBhNTFkOA&imdensity=1&imwidth=1338">
+  <div class="description">
+    <p class="title">SERVIZI BEAUTY </p>
+    <p>Scopri e prenota online i nostri servizi di make-up, skincare, haircare e molto altro!</p> 
+    <a href="">Prenota ora</a>
+  </div>  
+  </div>
+
+<div class="content-section">
+  <img src="https://media.douglas.it/medias/services-make-up-school-bts-16-0925.jpg?context=bWFzdGVyfGltYWdlc3wxNjk4ODN8aW1hZ2UvanBlZ3xhREl6TDJnek1DODFNREk0TXpjME56VXdPREkxTkM5elpYSjJhV05sY3kxdFlXdGxMWFZ3TFhOamFHOXZiQzFpZEhNdE1UWXRNRGt5TlM1cWNHY3w5MTFiNWQ0YWVmYjAxODhkNGExODYwODJlMmQwOGY4YWViZWRmMjk5OTM2ODhkNmU3MGUyZmRkNGU5MGI2NmJl&imdensity=1&imwidth=768">
+  <div class="description"> 
+    <p class="title">SCOPRI TUTTI I NOSTRI SERVIZI </p>
+      <p>I nostri servizi unici ed esclusivi pensati per esaltare la tua bellezza
+    </p>
+    <a href="">Scopri di più</a>
+  </div>  
+</div>
+
+<div class="content-section">
+  <img src="https://media.douglas.it/medias/services-gift-wrapping-CC-DK-03-153-BW-092025-RGB.jpg?context=bWFzdGVyfGltYWdlc3wyNDA5MjR8aW1hZ2UvanBlZ3xhR05oTDJoak1pODJOREkwTnpreE9UZ3pOekl4TkM5elpYSjJhV05sY3kxbmFXWjBMWGR5WVhCd2FXNW5MVU5EWDBSTFh6QXpMVEUxTTE5Q1YxOHdPVEl3TWpWZlVrZENMbXB3Wnd8OWNjMWUyMmQ5NGZkMjJiZWM0NzVkYjM3NmExZmM1N2I3ZjNiN2ZkZjhhZWVjNTE0ZDgxY2Q2NDUyNTFiMjRiYQ&imdensity=1&imwidth=954">
+  <div class="description"> 
+    <p class="title">GIFT CARD</p>
+     <p>Idea regalo: la nostra gift card, anche in formato digitale. Utilizzabile on-line e in negozio
+    </p>
+    <a href="">Scopri di più</a>
+  </div>  
+</div>
+  </div>
+</div>
+
+
+<div class="standard">
+  <p class="title-intestazione">NUOVI PRODOTTI</p>
+</div>
+
+<section class="catalogo" data-index="2">
+  <button class="back-hidden"> 
+    <img src="chevron_backward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="back">
+  </button> 
+  <button class="next"> 
+    <img src="navigate_next_24dp_1F1F1F.png" alt="next">
+  </button>
+  <div class="prodotto">
+    <div class="img-container">
+   <img src="https://media.douglas.it/medias/xbNoO9652303-0-global.jpg?context=bWFzdGVyfGltYWdlc3w0MjkxN3xpbWFnZS9qcGVnfGFEa3dMMmhrWVM4Mk16VTNPVEE1TmpNMU1EYzFNQzk0WWs1dlR6azJOVEl6TUROZk1GOW5iRzlpWVd3dWFuQm58MTA5OTljMTMyNjI2ZTZjYjNjMjI4MDI5ZjQ5ODQ0ZjI1MWE5YzJlYWJlNzBlMDJhMjU0ZGFiODZkZTZhZGUwMg&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+   <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+   <button class="new">NUOVO</button>
+   </div>
+   <div class="descrizione-prodotto"> 
+    <p  class="t">E.L.F</p>
+    <p class="desc">Hydrating Satin Camo Concealer </p>
+    <p class="light-font">Correttore</p>
+   <strong>€9,99</strong>
+   <p class="light-font">6 ml</p>
+   </div>
+   <div class="offerta"> 
+    <button> + SORPRESA</button>
+   </div>
+  </div>
+
+  <div class="prodotto">
+    <div class="img-container">
+    <img src="https://media.douglas.it/medias/mEs4dg181386-0-global.jpg?context=bWFzdGVyfGltYWdlc3w2NDYyMXxpbWFnZS9qcGVnfGFHTXpMMmhrWWk4Mk16Y3lOemd4TXpFMk5UQTROaTl0UlhNMFpHY3hPREV6T0RaZk1GOW5iRzlpWVd3dWFuQm58YzUyMWEzYzhjMDU3Y2Y3NDY4YThhYmRmMjljZjUxZjYwOTYzMmJlZDJmYzFjNjAwMjc3OTBkMTk0MjY5MzA1OA&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+    <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+    <button class="new">NUOVO</button>
+    </div>
+    <div class="descrizione-prodotto"> 
+      <p class="t">KYLIE COSMETICS</p>
+      <p class="desc">Matte Lip Kit</p>
+      <p class="light-font">make-up set</p>
+      <strong>€36,99</strong>
+      <p class="light-font">4.25 g</p>
+    </div>
+    <div class="offerta"> 
+     <button> + SORPRESA</button>
+    </div>
+   </div>
+
+   <div class="prodotto">
+    <div class="img-container">
+    <img src="https://media.douglas.it/medias/Bt6Gal1214398-0-dgl-IT.jpg?context=bWFzdGVyfGltYWdlc3w5MDExNXxpbWFnZS9qcGVnfGFHVXdMMmhtWkM4Mk16TTVOalV3T0RnMk1EUTBOaTlDZERaSFlXd3hNakUwTXprNFh6QmZaR2RzTFVsVUxtcHdad3w4YzM5ZTk3MzVhM2U3MjQ0NzRlOTdiNzMyNWY1MmFjYzBjMjY5YjhjOTIwNzcxZjUzYmRiODE3ZTIyYTA2ZDJi&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+    <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+    <button class="new">NUOVO</button>
+    </div>
+    <div class="descrizione-prodotto"> 
+      <p  class="t">KYLIE JENNER FRAGRANCES</p>
+      <p class="desc">cosmic</p>
+      <p class="light-font">Eau de Parfum</p>
+      <strong>€72,99</strong>
+      <p class="light-font">100 ml</p>
+    </div>
+    <div class="offerta"> 
+     <button> + SORPRESA</button>
+    </div>
+   </div>
+
+<div class="prodotto">
+  <div class="img-container">
+  <img src="https://media.douglas.it/medias/a7Artc851991-0-global.jpg?context=bWFzdGVyfGltYWdlc3w3NzgwMXxpbWFnZS9qcGVnfGFHSmlMMmhpWlM4Mk16Y3pOakEyTXpZNE9EY3pOQzloTjBGeWRHTTROVEU1T1RGZk1GOW5iRzlpWVd3dWFuQm58ZWY2MWUxYjBmNjBiNDJhZmQyOGM2ZjhmNjFmMTg1YTc1YzdlNjc2NjhhZDIwOGY4ZjljZjhkMmU0YmRkZDIyOA&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=603">
+  <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+  <button class="new">NUOVO</button>
+  </div>
+  <div class="descrizione-prodotto"> 
+    <p  class="t">MAYBELLINE</p>
+    <p class="desc">Lash Sensational Sky High</p>
+    <p class="light-font">Mascara</p>
+    <strong>€18,49</strong>
+    <p class="light-font">15 g</p>
+  </div>
+  <div class="offerta"> 
+   <button> + SORPRESA</button>
+  </div>
+ </div>
+
+ <div class="prodotto">
+  <div class="img-container">
+    <img src="https://media.douglas.it/medias/F4j28I1223515-0-global.jpg?context=bWFzdGVyfGltYWdlc3w5MTAwNnxpbWFnZS9qcGVnfGFHVXdMMmhtTVM4Mk16VTNNRFExTURnM05ETTVPQzlHTkdveU9Fa3hNakl6TlRFMVh6QmZaMnh2WW1Gc0xtcHdad3xhNGRkYTRmMTI3ZWRkNDZjYTdlNzRhNDIxZTBlNDUwNjYwZGExZTJkY2NlMjE4NzVjNDNmMTgxNDVlZTBmZjA2&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775">
+  <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+  <button class="new">NUOVO</button>
+  </div>
+  <div class="descrizione-prodotto"> 
+    <p  class="t">MORPHE</p>
+    <p class="desc">Cloudlight Soft Glow Veil</p>
+    <p class="light-font">cipria</p>
+    <strong>€41,23</strong>
+    <p class="light-font">74 g</p>
+  </div>
+  <div class="offerta"> 
+   <button> + SORPRESA</button>
+  </div>
+ </div>
+
+ <div class="prodotto-hidden">
+  <div class="img-container">
+  <img src="https://media.douglas.it/medias/26GHDS1003491-0-dgl-IT.jpg?context=bWFzdGVyfGltYWdlc3w1MTc0NXxpbWFnZS9qcGVnfGFESmpMMmcxWWk4eE5UYzVPVEU0T0RFMk1EVTBNaTh5TmtkSVJGTXhNREF6TkRreFh6QmZaR2RzTFVsVUxtcHdad3w5YWYxZjJjM2FhNWRiZGVhYTkxNmNmYjY1MmQxMzQ4ODJiZGJmNjNmOGFiYWZhZDc4YmM0OWRlOGExMWNlYmZh&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=603    ">
+  <img src="favorite_24dp_1F1F1F_FILL0_wght100_GRAD-25_opsz24.png" alt="Preferiti" class="icon">
+  <button class="new">NUOVO</button>
+  </div>
+  <div class="descrizione-prodotto"> 
+    <p  class="t">ASTRA MAKE-UP</p>
+    <p class="desc">Long Stay Concealer</p>
+    <p class="light-font">Correttore</p>
+    <strong>€5,29</strong>
+    <p class="light-font">4.5 ml</p>
+  </div>
+  <div class="offerta"> 
+   <button> + SORPRESA</button>
+  </div>
+ </div>
+</section>
+
+ <div class="info"> 
+  <h1>Douglas Onlineshop – Il tuo posto per profumi, Premium Beauty & le ultime tendenze</h1>
+  <p>Stai cercando una nuova fragranza, vuoi ricomprare il tuo rossetto preferito o semplicemente lasciarti ispirare? Nel Douglas Onlineshop ti mostriamo i brand più recenti, i prodotti di tendenza e i look più alla moda dei nostri Douglas Creators come Short Clips o in livestream. </p>
+ <h2>Douglas Profumeria – Make Life More Beautiful</h2>
+ <p>Già nel <strong>1910</strong> le sorelle Maria e Anna Carsten avevano capito quello che oggi è scontato: i cosmetici rendono la vita più bella.
+   Il piccolo lusso di un nuovo rossetto, il tanto desiderato High-end-profumo o la perfetta routine di skincare arricchiscono la nostra quotidianità e regalano momenti di glow-up.
+    Maria e Anna Carsten hanno aperto la <strong>prima Profumeria Douglas</strong> ad Amburgo, nata dal negozio di saponi "J.S. Douglas & Söhne". 
+    Successivamente seguirono altre filiali e il business dei profumi diventa indissolubilmente legato al nome "Douglas". 
+    Da quello che iniziò come negozio fisico, oggi Douglas è diventato anche online un brand che ti presenta le <strong>ultime fragranze, make-up e skincare di tendenza</strong>.
+    Inoltre, vediamo come ovvi i seguenti servizi per il tuo shopping:
+  </p>
+  <ul> 
+   <li>2 campioncini gratuiti con ogni ordine</li> 
+   <li>consegna rapida in filiale o a casa (BRT, Fermopoint Poste Italiane o Amazon Shipping) </li>
+   <li> buoni regalo online da usare in negozio, nell'app o nell'onlineshop </li>
+  </ul>
+ 
+    
+
+  <h3>Douglas online – Trova i tuoi Beauty Must-haves, Servizi & Ispirazione</h3>
+  <p>Siamo tuoi esperti in profumi, make-up, skincare & co.! 
+    Inoltre, nelle nostre sezioni stagionali, da San Valentino a estate fino a Natale troverai tutto quello che si adatta al fascino dei momenti più emozionanti dell'anno. Con i <strong>premium brands</strong> come <strong>Yves Saint Laurent, Chanel, Charlotte Tilbury o Rituals</strong>,
+   ti concedi un tocco di glamour o regali un momento wow.</p>
+
+   <p>Da Douglas trovi una vasta gamma di brand e prodotti, oltre a tanta conoscenza su come utilizzarli al meglio. Nel nostro Cosmetic Hub rispondiamo a domande come "Quale rossetto mi sta bene?" o "Quale tipo di colore sono?", che interessano particolarmente gli appassionati di beauty.
+     Ci muoviamo nel sapere del make-up, da "Truccarsi per principianti" fino ai look di tendenza. 
+     Nel nostro Skincare Guide esaminiamo attentamente gli ingredienti e le routine:
+      cosa c'è dietro il retinolo? E come funziona lo skin cycling? Ti aspettano articoli curati con consigli e idee preziose.</p>
+    
+    <p>Da noi l'esperienza di acquisto in-store e online si fondono perfettamente insieme. Ecco alcuni dei nostri <strong>servizi</strong> e <strong>vantaggi</strong> di cui puoi godere come cliente Douglas:</p>
+    <ul> 
+    <li>Douglas Card & Beauty Points: con la Douglas Beauty Card puoi raccogliere punti preziosi sia nello shopping online che in negozio, da utilizzare sul prossimo acquisto per ottenere sconti diretti.</li>
+
+    <li>App Douglas: metti like, salva, aggiungi al carrello – l'App Douglas ti offre tantissime possibilità per fare shopping in modo semplice e personalizzato. Strumenti di consulenza come il nostro trova-profumi ti aiutano a trovare la fragranza giusta. Inoltre, con l'App Douglas hai sempre a portata di mano la tua Douglas Beauty Card digitale.</li>
+    <li> Click & Collect: scegli i tuoi nuovi preferiti comodamente online e ritira il tuo pacco in 1-3 giorni lavorativi gratuitamente nel tuo punto vendita desiderato. In questo modo risparmi sulle spese di spedizione e puoi ritirare il pacco mentre fai shopping in città. Puoi pagare direttamente online al momento dell'ordine o in filiale.</li>
+    <li>Servizi in negozio: che si tratti del ballo di fine anno, di un compleanno importante o un invito a un matrimonio – ci pensiamo noi! Con i nostri servizi di make-up in negozio per trucco giorno e trucco sera i nostri esperti di bellezza ti truccheranno con look personalizzati per grandi occasioni. I nostri rituali gratuiti in negozio ti entusiasmeranno con un refresh del make-up o un'analisi della pelle personalizzata.
+    Hai altre domande sui nostri prodotti cosmetici? Saremo felici di consigliarti alla nostra newsletter gratuita.</li>
+    </ul>
+    <p>Vuoi saperne di più su Douglas come azienda, i nostri valori, le opportunità di carriera e altro, visita il nostro sito web Douglas Group.</p>
+    <h4>Douglas International:</h4>
+    <p>Oggi siamo presenti con Douglas in tutta Europa con circa 1.850 negozi e online in oltre 19 paesi:</p>
+
+     <p> Douglas Germania | Douglas Bulgaria | Douglas Italia | Douglas Croazia | Douglas Lettonia | Douglas Lituania | Douglas Paesi Bassi | Douglas Austria | Douglas Polonia | Douglas Portogallo | Douglas Romania | Douglas Svizzera | Douglas Spagna | Douglas Repubblica Ceca | Douglas Slovacchia | Douglas Ungheria | Nocibé | Douglas Belgio | Douglas Slovenia</p>
+</div>
+
+<footer class="newsletter-footer">
+  <div class="newsletter-footer-content">
+    <p><strong>Iscriviti ora alla Newsletter</strong></p>
+    <p>Iscriviti e ricevi un buono regalo da 5 euro</p>
+    <div class="newsletter-input">
+      <input type="email" class="email" placeholder="Indirizzo email*" required>
+      <button class="newsletter-submit">REGISTRATI</button>
+    </div>
+  </div>
+</footer>
+
+  <footer class="end-page">
+    <div class="end-page-box">
+        <div class="block">
+            <img src="local_shipping_24dp_1F1F1F_FILL0_wght200_GRAD0_opsz24.png">
+            <strong>Spedizione</strong>
+            <p>Consegna entro 3/6 giorni</p>
+        </div>
+        <div class="block">
+          <img src="orders_24dp_1F1F1F_FILL0_wght200_GRAD0_opsz24.png">
+            <strong>Spedizione gratuita</strong>
+            <p>Da €35,00</p>
+        </div>
+        </div>
+        <div class="end-page-box">
+        <div class="block">
+          <img src="redeem_24dp_1F1F1F_FILL0_wght200_GRAD0_opsz24.png">
+            <strong>2 campioni omaggio</strong>
+            <p>A tua scelta</p>
+        </div>
+        <div class="block">
+            <img src="featured_seasonal_and_gifts_24dp_1F1F1F_FILL0_wght200_GRAD0_opsz24.png">
+            <strong>Pacchetto regalo</strong>
+            <p>Biglietto di auguri</p>
+        </div>
+    </div>
+</footer>
+  </body>
+ </html>
